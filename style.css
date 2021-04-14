@@ -1,0 +1,201 @@
+html{
+  overflow: hidden;
+}
+body{
+  height: 100vh;
+  perspective: 2px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+nav{
+  z-index: 100;
+}
+footer{ 
+  padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #FFF;
+}
+footer h2{
+  font-size: 22pt;
+}
+footer h3{
+  font-size: 14;
+}
+.navbar {
+  background: rgba(255, 255, 255, 0.3);
+  border-bottom: 5px solid #C68350;
+}
+.parrallax-wrapper{
+  width: 100vw;
+  height: 80vh;
+  padding-top: 30vh;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.parrallax-wrapper::before{
+  content: "";
+  width: 100vw;
+  height: 120vh;
+  top: -70px;
+  left: 0;
+  background-image: url(img/bg-mountains.jpeg);
+  position: absolute;
+  z-index: -1;
+  transform: translateZ(-2px) scale(2);
+}
+.regular-wrapper{
+  width: 100vw;
+  padding-top: 50px;
+  background:#FFF;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px -20px 40px rgba(0, 0, 0, 0.3);
+}
+.regular-wrapper h2{
+  margin-bottom: 10px;
+}
+.body-content{
+  text-align: center;
+}
+.content{
+  text-align: center;
+  margin: auto auto;
+  padding: 50px;
+  color: #FFF;
+  text-shadow: 0px 0px 70px rgba(0,0,0, 0.8);
+}
+.content h1 {
+  font-size: 35pt;
+}
+.card-view-1{
+  display: block;
+  position: relative;
+  height: 350px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(img/gif-1.gif);
+  background-size: 200% 350px;
+  color:#222;
+  transition: 0.5s ease-out;
+}
+.card-view-2{
+  display: block;
+  position: relative;
+  height: 350px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(img/gif-2.gif);
+  background-size: 100% 350px;
+  color:#222;
+  transition: 0.5s ease-out;
+}
+.card-view-3{
+  display: block;
+  position: relative;
+  height: 350px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(img/gif-3.gif);
+  background-size: 100% 350px;
+  color:#222;
+  transition: 0.5s ease-out;
+}
+.card-view-4{
+  display: block;
+  position: relative;
+  height: 350px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background-image: url(img/gif-4.gif);
+  background-size: 100% 350px;
+  color:#222;
+  transition: 0.5s ease-out;
+}
+.card-view-1:hover{
+  transform: scale(1.03);
+  color: #222;
+  opacity: 80%;
+}
+.card-view-2:hover{
+  transform: scale(1.03);
+  color: #222;
+  opacity: 80%;
+}
+.card-view-3:hover{
+  transform: scale(1.03);
+  color: #222;
+  opacity: 80%;
+}
+.card-view-4:hover{
+  transform: scale(1.03);
+  color: #222;
+  opacity: 80%;
+}
+.card-content{
+  text-align: justify;
+  position:absolute;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 1)
+}
+.card-content h3{
+  font-size: 16pt;
+}
+.card-content p{
+  font-size: 11pt;
+  color:#666;
+}
+.section-divider {
+  height: 4px;
+  width:150px;
+  background-color: #C68350;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+@media (max-width: 544px) {  
+  .content h1 {
+    font-size: 28pt;
+  }
+  .parrallax-wrapper {
+    padding-top: 25vh;
+  }
+  .regular-wrapper h2{
+    font-size: 22pt;
+  }
+  .regular-wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .card-view-1{
+    width: 100%;
+  }
+  .card-view-2{
+    width: 100%;
+  }
+  .card-view-3{
+    width: 100%;
+  }
+  .card-view-4{
+    width: 100%;
+  }
+}
